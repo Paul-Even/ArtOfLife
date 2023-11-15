@@ -5,9 +5,13 @@ import time
 ports = mido.get_output_names()
 print(ports)
 
-outport = mido.open_output('loopMIDI Port 1')
+outport = mido.open_output('loopMIDI Port FL 2')
+outport2 = mido.open_output('loopMIDI Port FL2 3')
 
 while True:
-    outport.send(Message('note_on', note=90, velocity=100))
-    outport.send(Message('note_off', note=90))
-    time.sleep(1)
+    outport.send(Message('note_on', note=50, velocity=127))
+    outport.send(Message('note_off', note=50))
+    time.sleep(0.2)
+    outport2.send(Message('note_on', note=50, velocity=127))
+    outport2.send(Message('note_off', note=50))
+    time.sleep(0.7)
