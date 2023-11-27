@@ -8,6 +8,7 @@ print(ports)
 
 outport = mido.open_output('loopMIDI Port 1')
 
+
 def pulse_effect(min, max, sleep):
     n = 20
     count=0
@@ -16,11 +17,13 @@ def pulse_effect(min, max, sleep):
         time.sleep(sleep)
         n+=1
         count+=1
+    outport.send(Message('note_on', note=10, velocity=n))
     while n>20:
         outport.send(Message('note_on', note=90, velocity=n))
         time.sleep(sleep)
         n-=1
         count+=1
+    outport.send(Message('note_on', note=10, velocity=n))
     print(count)
 
 def calcul_temps_bpm(bpm):
