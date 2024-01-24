@@ -97,14 +97,14 @@ The sensor data can be sent to a Python program using the Lab Streaming Layer. T
 
 ###    a. The Python program
 
-The Python program is responsible for converting the raw data into MIDI notes. For this purpose, the program receives the values from OpenSignals and detects when a pulse is happening or if the user is inhaling or exhaling. During these events, the program sends different MIDI notes to multiple programs to impact the music and the visuals displayed. This program is called "ArtOfLife.py" and can be found on this GitHub repository.
+The Python program is responsible for converting the raw data into MIDI notes. For this purpose, the program receives the values from OpenSignals and detects when a pulse is happening or if the user is inhaling or exhaling. During these events, the program sends different MIDI notes to multiple programs to impact the music and the visuals displayed. This program is called "ArtOfLife.py" and can be found on this GitHub repository. But before running the program, we must create virtual MIDI ports.
 
 <br/>
 <br/> 
 
 ###    b. loopMIDI
 
-For the Python program to be able to send MIDI notes, the computer needs to open virtual MIDI ports, and so is the role of loopMIDI. loopMIDI is a very simplistic software that can open personalized MIDI ports. You will need to create two ports that will link to the FL Studio software. Make sure to call them “loopMIDI Port FL” and “loopMIDI Port FL2”. Then, you must connect two ports related to the MadMapper software. Make sure to call them “loopMIDI Port MM” and “loopMIDI Port MM2”.
+For the Python program to be able to send MIDI notes, the computer needs to open virtual MIDI ports to receive the notes, and so is the role of loopMIDI. loopMIDI is a very simplistic software that can open personalized MIDI ports. You will need to create two ports that will link to the FL Studio software. Make sure to call them “loopMIDI Port FL” and “loopMIDI Port FL2”. Then, you must connect two ports related to the MadMapper software. Make sure to call them “loopMIDI Port MM” and “loopMIDI Port MM2”. Only after that you can start running the Python program.
 
 <p align="center">
   <img src="https://github.com/Paul-Even/ArtOfLife/assets/114758201/1225ece7-3319-4012-98d4-1af29242ddec" height ="300">
