@@ -12,7 +12,6 @@ outport3 = mido.open_output('loopMIDI Port FL2 2')
 
 streams = resolve_stream('name','OpenSignals') #recover the list of LSL stream of type 'ecg'
 stream = StreamInlet(streams[0]) #create an stream from the first stream of the list
-
 def calcul_temps_bpm(bpm):
     return (bpm/60)/160
 
@@ -38,7 +37,7 @@ while True:
     n = 0
     while n < 10000 : 
         values, timestamp = stream.pull_sample() #recover the data and their timestamp_ecg
-        if values[1] < -0.5:
+        if values[1] < -0.4:
             last_index = position
             position = n
             #np.where(ecg_transform = i)
@@ -46,9 +45,9 @@ while True:
                 #peak_count+=1
                 print(n)
                 print("heartbeat")
-                outport2.send(Message('note_on', note=50, velocity=127))
-                outport2.send(Message('note_off', note=50))
-                pulse_effect(calcul_temps_bpm(20))
+                #outport2.send(Message('note_on', note=50, velocity=127))
+                #outport2.send(Message('note_off', note=50))
+                #pulse_effect(calcul_temps_bpm(20))
                 
                 
         n+=1
