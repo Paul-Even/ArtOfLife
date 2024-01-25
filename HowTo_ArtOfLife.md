@@ -3,6 +3,23 @@
 <img src="https://github.com/Paul-Even/ArtOfLife/assets/114758201/bc58b096-c290-4f04-b164-9dc7108552ce" height="500">
 </p>
 
+## 0. Everything necessary for this project
+
+### Hardware :
+
+1. Plux Biosignals ECG Sensor : https://www.pluxbiosignals.com/products/electrocardiography-ecg-sensor?variant=40878841200831
+2. Plux Biosignals EDA Sensor : https://www.pluxbiosignals.com/products/electrodermal-activity-eda-sensor
+3. Plux Biosignals Breathing Sensor : https://www.pluxbiosignals.com/products/respiration-pzt
+4. Plux Biosignals Bitalino card : https://www.pluxbiosignals.com/products/bitalino-revolution-plugged-kit-ble-bt
+5. 5 electrodes : https://www.pluxbiosignals.com/products/gelled-self-adhesive-disposable-ag-agcl-electrodes
+
+### Softwares : 
+
+6. Visual Studio Code
+7. FL Studio
+8. MadMapper
+9. loopMIDI
+
 ## 
 ## 1. Putting the sensors on the user
 ###    a. ECG Sensor
