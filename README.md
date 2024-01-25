@@ -5,7 +5,6 @@ This project aims to be a platform for artistic creations based on human physiol
 The basis of the project relies on the use of multiple sensors, such as an Electrocardiogram, monitoring the heart signal of the user, or an Electrodermal Activity Sensor, monitoring the user's skin conductance. The data recovered from the sensors is processed and sent through multiple softwares to output music and visuals.
 \
 \
-
 The vision of this project was created in the idea of creating art generated from everyone's deep interior, taking inspiration at interactive works such as I AM (Eleni Stavrakidou) or The Ethereal Phenomena (Silvana Malaver, et al.). The inspiration for the output was inspired by the visual works of Luncinda Dilly and Light Mapping shows such as the Aura Invalides. The music output was inspired by the Youtube channel Space Ambient.
 \
 \
