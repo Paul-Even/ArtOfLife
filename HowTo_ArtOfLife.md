@@ -153,4 +153,39 @@ Don’t forget to press play; otherwise, no music will play!
 ## 
 ## 5.MadMapper
 
-MadMapper (version 5.0.7) is the video-mapping software used in this project. The software will display predefined shaders which will react to the MIDI notes it receives from loopMIDI. The MadMapper file is called “ArtOfLife.mad” and can be found on this GitHub repository.
+MadMapper (version 5.0.7) is the video-mapping software used in this project. The software will display predefined shaders which will react to the MIDI notes it receives from loopMIDI. The MadMapper file is called “ArtOfLife.mad” and can be found on this GitHub repository. 
+
+<p align="center">
+  <img src="assets/MadInterface.PNG" height ="125">
+</p>
+<p align="center">
+    <a>
+      Figure 8 : ArtofLife MadMapper Interface.
+</p>
+
+
+To ensure that the visual is displayed with the projector, once it is connected to your computer, make sure to set the "extend display" mode in your computer settings. Then click on the following icon, top left in madmapper :
+
+<p align="center">
+  <img src="assets/projectorsetup1.PNG" height ="125">
+</p>
+<p align="center">
+    <a>
+      Figure 9 : Projector Icon.
+</p>
+
+Then click on "Video-output-1" and a new table with more information will appear at bottom left. Click on "Desktop Window" 
+
+<p align="center">
+  <img src="assets/Desktop window.PNG" height ="125">
+</p>
+<p align="center">
+    <a>
+      Figure 10 : Desktop Window Button.
+</p>
+
+This button lets you load a new window that you'll need to place on your "second screen", i.e. whatever the projector is projecting.
+
+Now the visual projection is all set ! But let's make sure that the midi port are well connected to it.
+
+<br/>
